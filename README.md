@@ -1,0 +1,2 @@
+# CHOPCHOP
+Repositorio chopchop algorithmics
