@@ -3,9 +3,8 @@ titulo_1 = 'ChopChop'
 win_pos = 850, 450
 win_size = 500, 385
 
-main_win.setWindowTitle()
-main_win.show()
-h_line = QHBoxLayout()
-h_line.addWidget(winner, alignment = Qt.AlignCenter)
-main_win.setLayout(h_line)
+first_win_text = "Bienvenido a CHOP-CHOP. Presione el botón que ve abajo para continuar"
+first_win_button = QPushButton("🍟CONTINUAR🍔")
 
+second_win_text = "Bienvenido, Por Favor escoja algo del menú!"
+menu = "parrilla mixta = 20$\n Pinchos de carne = 5$ c/u\n cachopo de lomito con papas = 10$\n nuggets con papas fritas = 8$\n solomillo = 15$\n Lipton = 3$\n jugo natural = 2,5$\n refresco = 2$"
