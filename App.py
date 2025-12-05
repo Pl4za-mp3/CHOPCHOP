@@ -1,11 +1,7 @@
-from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout
-from text.py import *
-
+from text import *
+app = QApplication()
 class MainWin(QWidget):
-
-main_win= QApplication([])
-main_win = QWidget()
+    pass
 
 
 
@@ -13,6 +9,6 @@ main_win = QWidget()
 
 
 
-
+mw = MainWin()
 
 app.exec_()
