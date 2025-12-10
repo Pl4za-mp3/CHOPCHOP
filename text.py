@@ -1,6 +1,6 @@
 #En este archivo está el texto y las variales del programa
 from PyQt5.QtCore import Qt
-from PyQt5.QtWidgets import QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout
+from PyQt5.QtWidgets import QLineEdit, QApplication, QWidget, QPushButton, QLabel, QVBoxLayout, QHBoxLayout
 titulo_1 = 'ChopChop'
 win_pos = 850, 450
 win_size = 500, 385

@@ -1,6 +1,7 @@
 from text import *
 from Final_win import *
 
+
 class Second_win(QWidget):
     def __init__(self):
         super().__init__()
@@ -9,25 +10,23 @@ class Second_win(QWidget):
         self.connects()
         self.show()
     def set_appear(self):
-        self.setWindowTitle()
-        self.resize(win_size)
-        self.move(win_pos)
+        self.setWindowTitle('Pedido')
+        self.resize(700, 500)
+        self.move(700, 300)
     def initUI(self):
         self.instrucciones= QLabel(second_win_text)
         self.menu = QLabel(menu)
-        self.botones = QPushButton('pagar')
-        h_line = QHBoxLayout()
-        l_line = QVBoxLayout()
-        r_line = QVBoxLayout()
-        h_line.addWidget( self.menu , alignment= Qt.AlignCenter)
-        l_line.addWidget(self.botones , alignment= Qt.AlignCenter)
-        self.l_line.addWidget(self.button)
-        self.h_line.addLayout(self.l_line)
-        self.h_line.addLayout(self.r_line)
-        self.setLayout(self.h_line)
+        self.pedido = QLineEdit('que querria de nuestro menu?')
+        self.botones = QPushButton('procesar orden')
+        self.line = QVBoxLayout()
+        self.line.addWidget(self.instrucciones, alignment= Qt.AlignCenter)
+        self.line.addWidget( self.menu , alignment= Qt.AlignCenter)
+        self.line.addWidget(self.pedido, alignment= Qt.AlignCenter )
+        self.line.addWidget(self.botones , alignment= Qt.AlignCenter)
+        self.setLayout(self.line)
     def connects(self):
-        self.boton.clicked.connect(self.show)
-    def show(self):
+        self.botones.clicked.connect(self.abrir_ventana)
+    def abrir_ventana(self):
         self.hide()
         self.tw = Final_win()
 

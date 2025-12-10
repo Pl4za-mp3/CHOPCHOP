@@ -1,7 +1,9 @@
 from text import *
-app = QApplication()
+from second_win import *
+app = QApplication([])
 class MainWin(QWidget):
     pass
+
 
 
 
